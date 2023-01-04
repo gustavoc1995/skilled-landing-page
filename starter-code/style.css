@@ -1,0 +1,63 @@
+:root {
+    --dark-blue: #13183F;
+}
+
+.body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+.nav-bar {
+    width: 343px;
+    height: 48px;
+    margin: 16px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar img {
+    height: 35px;
+}
+
+.nav-bar button {
+    width: 140px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    background: var(--dark-blue);
+    color: white;
+    border-radius: 30px;
+    border: 0px;
+}
+
+.header-title {
+    width: 343px;
+    margin: 22px auto;
+}
+
+.header-title .title {
+    font-size: 32px;
+    color: var(--dark-blue);
+}
+
+.header-title .courses-introduction {
+    font-size: 16px;
+    font-weight: 500;
+    color: #83869a;
+
+}
+
+.header-title button {
+    border: 0;
+    width: 167px;
+    height: 58px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    color: white;
+    background: linear-gradient(0deg, rgba(240, 42, 166, 1) 0%, rgba(255, 111, 72, 1) 100%);
+}
+
+.main-image img {
+    width: 100%;
+}
