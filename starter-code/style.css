@@ -1,11 +1,15 @@
 :root {
+    --primary-color: #f74780;
     --dark-blue: #13183F;
+    --text-color: #83869a;
 }
 
-.body {
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
-
 
 .nav-bar {
     width: 343px;
@@ -43,7 +47,7 @@
 .header-title .courses-introduction {
     font-size: 16px;
     font-weight: 500;
-    color: #83869a;
+    color: var(--text-color);
 
 }
 
@@ -60,4 +64,66 @@
 
 .main-image img {
     width: 100%;
+}
+
+
+#courses-section{
+    background: linear-gradient(180deg, #FFFFFF 0%, #83869a 100%);
+}
+.courses{
+    width: 343px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.courses .course-title-card{
+    width: 343px;
+    height: 120px;
+    background: linear-gradient(0deg, rgba(240, 42, 166, 1) 0%, rgba(255, 111, 72, 1) 100%);
+    color: white;
+    line-height: 32px;
+    font-size: 24px;
+    font-family: 'Plus Jakarta Sans', sans-serif;;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courses-card{
+    height: 195px;
+    width: calc(100% - 56px);
+    margin: 30px auto;
+    background: white;
+    border-radius: 10px;
+    padding: 32px 28px;
+    border: 1px solid white;
+    position: relative;
+}
+
+.courses-card img{
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: -28px;
+}
+
+.courses-card h3{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.courses-card p{
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.courses-card a{
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 700;
 }
