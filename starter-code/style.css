@@ -72,7 +72,12 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-
+.tablet-hero-image{
+    display: none;
+}
+.desktop-hero-image{
+    display: none;
+}
 
 #courses-section {
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
@@ -170,4 +175,39 @@ footer {
     font-weight: bold;
     border: none;
     border-radius: 28px;
+}
+
+@media (min-width: 600px){
+    .nav-bar {
+        width: 678px;
+        margin-left: 32px;
+    }
+    .header-title {
+        width: 100%;
+        margin: 93px 32px;
+        position: relative;
+    }
+    .header-info{
+        width: 398px;
+    }
+    .main-image {
+        width: 600px;
+        height: 640%;
+        position: absolute;
+        top: -220px;
+        right: -220px;
+    }
+    .main-image img {
+        width: 100%;
+    }
+    .tablet-hero-image{
+        display: block;
+    }
+    .mobile-hero-image{
+        display: none;
+    }
+    .desktop-hero-image{
+        display: none;
+    }
+
 }
